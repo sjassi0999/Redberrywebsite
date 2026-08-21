@@ -47,18 +47,20 @@ export const Vineyard = () => {
       <div className="absolute inset-[-20%] w-[140%] h-[140%] z-0">
         <img 
           ref={imageRef}
+          loading="lazy"
+          decoding="async"
           src="/images/vineyard_parallax.png" 
           alt="Golden Hour Vineyard" 
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-background/60"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
       </div>
 
       <div ref={textRef} className="relative z-10 text-center px-6 max-w-3xl">
-        <h2 className="text-5xl md:text-7xl font-heading text-white mb-8 shadow-sm">
+        <h2 className="text-5xl md:text-7xl font-heading text-white drop-shadow-md mb-8 shadow-sm">
           Where <span className="text-gold italic">Magic</span> Begins
         </h2>
-        <p className="text-white/90 font-body text-lg md:text-2xl leading-relaxed text-balance">
+        <p className="text-white/90 drop-shadow-sm font-body text-lg md:text-2xl leading-relaxed text-balance">
           Rooted in nutrient-rich soil and kissed by the golden sun, our vineyards are the sanctuary where nature's finest ingredients are cultivated with uncompromising passion.
         </p>
       </div>

@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #050505;
-  --color-secondary: #13080C;
-  --color-accent: #6B0F1A;
-  --color-gold: #D4AF37;
-  --color-white: #FAFAFA;
-  --color-gray: #BDBDBD;
+  --color-background: #FAF8F5;
+  --color-secondary: #F0EDE6;
+  --color-primary: #1C1C1C;
+  --color-accent: #722F37;
+  --color-gold: #B8975E;
+  --color-white: #FFFFFF;
+  --color-gray: #595959;
 
   --font-heading: "Cormorant Garamond", serif;
   --font-body: "Inter", sans-serif;
@@ -15,7 +16,7 @@
 
 :root {
   background-color: var(--color-background);
-  color: var(--color-white);
+  color: var(--color-primary);
   font-family: var(--font-body);
 }
 
@@ -27,15 +28,21 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (min-width: 768px) {
+  body, a, button, input, textarea, select {
+    cursor: none !important;
+  }
+}
+
 /* Custom Scrollbar for non-lenis browsers */
 ::-webkit-scrollbar {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--color-background);
+  background: var(--color-secondary);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--color-secondary);
+  background: var(--color-gray);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -69,4 +76,13 @@ html.lenis, html.lenis body {
 }
 .lenis.lenis-smooth iframe {
   pointer-events: none;
+}
+
+/* Hide scrollbar utility */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }

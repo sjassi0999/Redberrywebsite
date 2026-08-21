@@ -2,21 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <!-- SEO and Social Cards -->
-    <title>Château Élégance | Premium Luxury Wine</title>
+    <!-- Security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://formsubmit.co;" />
+    
+    <!-- Advanced SEO and Social Cards -->
+    <title>RedBerry Wines | Premium Luxury Wine</title>
     <meta name="description" content="Experience handcrafted wines made from the finest vineyards. A premium luxury wine collection." />
-    <meta property="og:title" content="Château Élégance | Premium Luxury Wine" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <link rel="canonical" href="https://www.redberrywines.com/" />
+    
+    <meta property="og:title" content="RedBerry Wines | Premium Luxury Wine" />
     <meta property="og:description" content="Experience handcrafted wines made from the finest vineyards." />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.redberrywines.com/" />
+    <meta property="og:image" content="https://www.redberrywines.com/images/dae00f40-267b-42c9-a66a-4742b3b67efe.png" />
+    
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="RedBerry Wines | Premium Luxury Wine" />
+    <meta name="twitter:description" content="Experience handcrafted wines made from the finest vineyards." />
+    <meta name="twitter:image" content="https://www.redberrywines.com/images/dae00f40-267b-42c9-a66a-4742b3b67efe.png" />
+
+    <!-- JSON-LD Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Winery",
+      "name": "RedBerry Wines",
+      "image": "https://www.redberrywines.com/images/dae00f40-267b-42c9-a66a-4742b3b67efe.png",
+      "@id": "https://www.redberrywines.com",
+      "url": "https://www.redberrywines.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2150 Steeles Ave E",
+        "addressLocality": "Brampton",
+        "addressRegion": "ON",
+        "postalCode": "L6T 1A7",
+        "addressCountry": "CA"
+      },
+      "email": "info@redberrywines.com",
+      "priceRange": "$$$",
+      "description": "Experience handcrafted wines made from the finest vineyards. A premium luxury wine collection."
+    }
+    </script>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript>
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet" />
+    </noscript>
   </head>
   <body class="bg-background text-white font-body selection:bg-accent selection:text-white">
     <div id="root"></div>
