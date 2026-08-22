@@ -16,7 +16,9 @@ export const Footer = () => {
           
           {/* Brand */}
           <div className="lg:col-span-1">
-            <h2 className="text-2xl font-heading font-semibold tracking-wider text-white mb-6">REDBERRY WINES</h2>
+            <div className="mb-6">
+              <img src="/images/logo.webp" alt="Redberry Wines Logo" className="h-28 md:h-40 w-auto" />
+            </div>
             <p className="text-white/60 font-body text-sm leading-relaxed mb-8">
               Crafting extraordinary moments through uncompromised quality and centuries of heritage.
             </p>
@@ -79,7 +81,12 @@ export const Footer = () => {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-white/40 font-body">
-          <p>&copy; {new Date().getFullYear()} RedBerry Wines. All rights reserved.</p>
+          <div className="text-center md:text-left">
+            <p>&copy; {new Date().getFullYear()} RedBerry Wines. All rights reserved.</p>
+            <p className="mt-1">
+              Designed by <a href="https://www.essayymedia.com/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">ESSAYY MEDIA</a>
+            </p>
+          </div>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="/privacy" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>

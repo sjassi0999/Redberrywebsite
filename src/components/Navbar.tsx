@@ -66,10 +66,10 @@ export const Navbar = () => {
         <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
           <Link 
             to="/" 
-            className={`text-xl md:text-2xl font-heading font-semibold tracking-[0.2em] relative z-20 transition-colors duration-500 ${textColorClass}`}
+            className="relative z-20 transition-opacity duration-300 hover:opacity-80"
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           >
-            REDBERRY WINES
+            <img src="/images/logo.webp" alt="Redberry Wines Logo" className="h-20 md:h-32 w-auto" />
           </Link>
 
           <div className="hidden md:flex items-center space-x-8">
